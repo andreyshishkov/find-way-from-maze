@@ -27,7 +27,7 @@ async def steps(request: Request):
     return get_result(graph, start, finish)[0]
 
 
-@app.post('path')
+@app.post('/path')
 async def path(request: Request):
     graph = request.graph
     start, finish = request.start, request.finish
